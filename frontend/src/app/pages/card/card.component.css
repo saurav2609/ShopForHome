@@ -1,0 +1,28 @@
+
+.fa-heart {
+    color :palevioletred;
+    cursor : pointer;
+}
+.searching{
+    border-radius: 20px;
+    height: 50px;
+    width: 85%;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: x-large;
+    font-weight: 400;
+    padding: 10px;
+}
+.prodetails {
+    border-radius: 20px;
+    height: 100%;
+    width: 70%;
+}
+.prodetails img{
+    height: 70%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.view{
+    margin: 55px;
+}

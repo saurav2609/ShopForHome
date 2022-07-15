@@ -1,0 +1,32 @@
+<div>
+<h1 align="center" class="font-italic display-4 mb-5"><b>{{title}}</b></h1>
+
+<div align="center" >
+<input type = "text" align="left" class="searching" name="search" [(ngModel)]="searchText" placeholder ="Search..." />
+<!-- <span class=" cursor-pointer display-4 rounded border border-dark p-3"><i class="fa fa-search" aria-hidden="true"></i></span> -->
+</div>
+</div>
+<div class="row card-deck text-center container-fluid view">
+ 
+
+  <div *ngFor="let productInfo of page?.content | filter:searchText" class="col-lg-4 ">
+    <div class="card  prodetails"  >
+      <img height="30%" class="card-img-top" src="{{productInfo.productIcon}}" alt="{{productInfo.productName}}">
+      <div class="card-body">
+        <h3 class="card-title ">{{productInfo.productName}}</h3>
+        
+        <div class="h5 text-left">
+          <p class="card-test"><strong>Description: </strong>{{productInfo.productDescription}}</p>
+          <p class="card-text"><strong>Price: </strong>{{productInfo.productPrice | currency}}</p>
+          <p class="card-text"><strong>Stock: </strong>{{productInfo.productStock}}</p>
+        </div>
+        <br>
+        <a routerLink="/product/{{productInfo.productId}}" *ngIf="productInfo.productStatus == 0; else offBlock"
+           class="btn btn-primary btn-lg"
+        >Get It!</a>
+        <ng-template #offBlock><a class="btn btn-secondary btn-lg disabled">Unavailable</a></ng-template>
+      </div>
+    </div>
+  </div>
+</div>
+<app-pagination  [currentPage]="page" ></app-pagination>
