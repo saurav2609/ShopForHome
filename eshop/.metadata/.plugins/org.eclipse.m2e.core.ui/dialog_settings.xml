@@ -2,10 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="C:\Users\saura\Desktop\Wipro Capstone\microservice_mysql_capstone\reportapi"/>
-			<item value="C:\Users\saura\Desktop\Wipro Capstone\microservice_mysql_capstone\shopapi"/>
-			<item value="C:\Users\saura\Desktop\Wipro Capstone\microservice_mysql_capstone\discountapi"/>
-			<item value="C:\Users\saura\Desktop\Wipro Capstone\microservice_mysql_capstone\microservice"/>
+			<item value="D:\GitHub\ShopForHome\discountapi"/>
+			<item value="D:\GitHub\ShopForHome\reportapi"/>
+			<item value="D:\GitHub\ShopForHome\shopapi"/>
+			<item value="D:\GitHub\ShopForHome\microservice"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
